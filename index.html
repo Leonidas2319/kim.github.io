@@ -1,18 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Articles</title>
+
     <link rel="stylesheet" href="style.css">
-    <title>My First Website</title>
 </head>
 
 <body>
-    <h1>Hello! 👋</h1>
 
-    <p>This is my first website.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
 
-    <h2>About me</h2>
-    <p>I'm learning how to build websites.</p>
+        <a href="index.html" class="logo">
+            My Articles
+        </a>
 
-    <button>Click me!</button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#articles">Articles</a>
+            <a href="#about">About</a>
+        </div>
+
+        <button id="darkModeButton" class="nav-button">
+            Dark mode
+        </button>
+
+    </nav>
+
+
+    <!-- Hero section -->
+    <header class="hero">
+
+        <h1>Ideas worth reading.</h1>
+
+        <p>
+            A collection of my articles, thoughts and discoveries.
+        </p>
+
+        <a href="#articles" class="button">
+            Browse articles
+        </a>
+
+    </header>
+
+
+    <!-- Articles -->
+    <main id="articles">
+
+        <h2>Latest articles</h2>
+
+        <div class="article-grid">
+
+
+            <!-- Article 1 -->
+            <article class="article-card">
+
+                <!-- An image can be a button by putting it inside a link -->
+                <a href="articles/article1.html">
+
+                    <img
+                        src="images/article1.jpg"
+                        alt="A description of the image"
+                    >
+
+                </a>
+
+                <div class="article-content">
+
+                    <p class="category">Technology</p>
+
+                    <h3>
+                        <a href="articles/article1.html">
+                            My First Article
+                        </a>
+                    </h3>
+
+                    <p>
+                        This is a short description of the article.
+                    </p>
+
+                    <a
+                        href="articles/article1.html"
+                        class="read-more"
+                    >
+                        Read article →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Article 2 -->
+            <article class="article-card">
+
+                <a href="articles/article2.html">
+
+                    <img
+                        src="images/article2.jpg"
+                        alt="Another description"
+                    >
+
+                </a>
+
+                <div class="article-content">
+
+                    <p class="category">Ideas</p>
+
+                    <h3>
+                        <a href="articles/article2.html">
+                            Another Interesting Article
+                        </a>
+                    </h3>
+
+                    <p>
+                        Another short description.
+                    </p>
+
+                    <a
+                        href="articles/article2.html"
+                        class="read-more"
+                    >
+                        Read article →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </main>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <h2>About</h2>
+
+        <p>
+            This website is where I publish my articles and ideas.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 My Articles</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
